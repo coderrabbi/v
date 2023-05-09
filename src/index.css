@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: REVAMPED;
+  src: url(/src/static/font/Revamped.otf);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  scroll-behavior: smooth;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #461c1c;
+  opacity: 0.2;
+  z-index: 0;
+}
+.dark-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.2;
+  z-index: 0;
+}
+.gradient {
+  background: linear-gradient(180deg, #ff0000, #690000);
+}
+.black-gradient {
+  background: linear-gradient(180deg, #1d2224, #0d0000);
+}
+.text-gradient {
+  background: linear-gradient(#ff0000, #690000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.active {
+  position: relative;
+}
+.active::after {
+  content: url(../src/assets/Active\ Link\ -\ Icon.svg);
+  position: absolute;
+  top: -7px;
+  right: 50;
+}
+.badge {
+  position: relative;
+}
+.badge::after {
+  content: url(../src/assets/Badge.svg);
+  top: -15px;
+  left: 10px;
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+.divider-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #0d00001e;
+  z-index: 1;
+}
+.styles_faq-row-wrapper__3vA1D {
+  background-color: var(--faq-bg-color, white);
+  background: transparent !important;
+}
+
+.styles_faq-row-wrapper__3vA1D
+  .row-title.closed.styles_row-title__1YiiY.styles_closed__39w54 {
+  background: linear-gradient(180deg, #1d2224 0%, #0d0000 100%);
+  margin-bottom: 12px;
+
+  padding: 4px 15px 13px 20px;
+  border: 1px solid rgba(255, 240, 240, 0.5) !important;
+  border-radius: 100px;
+}
+.styles_faq-row-wrapper__3vA1D
+  .styles_row-body__1NvUo
+  .styles_faq-row__2YF3c
+  .styles_row-title__1YiiY {
+  background: linear-gradient(180deg, #1d2224 0%, #0d0000 100%);
+  margin-bottom: 19px;
+  padding: 10px !important;
+  font-family: "IBM Plex Mono" !important;
+  font-weight: 500;
+  text-transform: uppercase !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  padding: 10px 20px 10px 20px !important;
+  border: 1px solid rgba(255, 240, 240, 0.5) !important;
+  border-radius: 100px;
+}
+section.faq-row.styles_faq-row__2YF3c {
+  border: none !important;
+}
+.styles_row-content-text__2sgAB.row-content-text {
+  color: #968e8e !important;
+  padding-left: 15px !important;
+  font-family: "IBM Plex Mono" !important;
+  font-weight: 500;
+  padding-bottom: 15px !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+}
+
+span.icon-wrapper.styles_icon-wrapper__2cftw {
+  background-image: url(/src//assets//Active\ -\ Icon.svg);
+  height: 12px !important;
+  background-repeat: no-repeat !important;
+  font-size: 0px !important;
+  width: 12px !important;
+  position: inherit !important;
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.light-bg {
+  background-image: url(../src//assets//Light.png);
+  height: fit-content;
+  width: fit-content;
+  background-size: cover;
+  background-position: center;
+}
+
+.for-transform {
+  transform: translate(-50%, -50%);
+}
